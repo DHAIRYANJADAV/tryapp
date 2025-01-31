@@ -43,7 +43,7 @@ pipeline {
             steps {
                 script {
                     sh """
-                    ssh -i "C:\Users\91942\Downloads\try-key.pem" ec2-user@ec2-13-127-36-6.ap-south-1.compute.amazonaws.com'
+                    ssh -i "C:/Users/91942/Downloads/try-key.pem" ec2-user@ec2-13-127-36-6.ap-south-1.compute.amazonaws.com'
                     docker pull dhairyajadav/my-tryapp:latest &&
                     docker run -d -p 3000:3000 my-tryapp dhairyajadav/my-tryapp:latest
 
